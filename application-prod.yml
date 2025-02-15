@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://prod-db-server:5432/bank_prod
+    driver-class-name: org.postgresql.Driver
+    username: prod_user
+    password: ${vault.db-password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false

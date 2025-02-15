@@ -1,0 +1,18 @@
+logging:
+  level:
+    root: INFO
+server:
+  compression:
+    enabled: true
+
+spring:
+  cloud:
+    consul:
+      host: consul
+      port: 8500
+      discovery:
+        enabled: true
+        register: true
+        prefer-ip-address: true
+        health-check-path: /actuator/health
+        health-check-interval: 10s
