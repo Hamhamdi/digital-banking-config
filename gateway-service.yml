@@ -7,19 +7,4 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-    consul:
-      host: consul
-      port: 8500
-      discovery:
-        service-name: gateway-service
-        prefer-ip-address: true
-    vault:
-      host: vault
-      port: 8200
-      authentication: TOKEN
-      token: my-root-token
-      kv:
-        enabled: true
 
-server:
-  port: 9999  # Changed from 8888 to avoid conflict
