@@ -16,3 +16,5 @@ spring:
         prefer-ip-address: true
         health-check-path: /actuator/health
         health-check-interval: 10s
+test:
+  property: "This value is from the Config Server"
